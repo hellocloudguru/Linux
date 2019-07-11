@@ -1,0 +1,4 @@
+for host in $(cat hosts.txt)
+do
+ssh user@$host  echo "================ Host name: $host ==============="; df -h
+done
